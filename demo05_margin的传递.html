@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>margin的传递</title>
+		<style type="text/css">
+			#box1{
+				width: 200px;
+				height: 200px;
+				background-color: pink;
+				padding-top: 30px;
+			
+			}
+			#box2{
+				width: 100px;
+				height: 100px;
+				background-color: red;
+				/*margin-top: 30px;*/
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+			margin的传递
+				1.标签嵌套
+				2.只针对margin-top，而其他3个方向，没有这个问题。
+				
+			如果在子标签中设置了margin-top，本意是想让子标签距离父标签，右30像素的间距，
+			但实际上这个数值被传给父标签，导致父标签和它的上一层产生了距离
+			
+			注意点：父标签中，如果没有border边框线，或者是没有内容(文本或图片。。)，那么就会发生margin的传值
+			
+			解决思路：
+				目的，就是子标签到父标签之间右个间距，
+					理论上：可以在子表情上添加margin-top，或者是父标签上添加pading-top。
+					但是因为margin-top会传值，所以可以使用父标签添加padding-top的思路来解决问题。
+			
+		-->
+		<div id="box1">
+			<div id="box2">
+				王二狗
+			</div>
+		</div>
+	</body>
+</html>

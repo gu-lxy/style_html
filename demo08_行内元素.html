@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>行内元素</title>
+		<style type="text/css">
+			#span1{
+				background: pink;
+				/*width: 300px;
+				height: 200px;*/
+			}
+			#span2{
+				background: gold;
+			}
+		</style>
+	</head>
+	<body>
+	<!--
+		行内元素的特点：
+		1. 在一行显示
+		当设置两个<span>标签时，可以发现默认为显示在一行左右排列。
+		2. 不支持宽高，在margin和padding也有一些问题
+		<span>标签不支持宽高，即当给<span>标签设置宽高时，不起作用。
+		<span>标签在margin和padding上也会有一些问题，当设置margin和padding边距时，上下内外边距显示可能会出现问题，左右内外边距显示没有问题。
+		3. 宽度由内容撑开
+		前面讲到，内联标签不支持宽高。内联标签的宽由内容撑开，高也由内容决定
+		4.上面的案例中可以看出两个<span>标签之间会有一个小空隙，这是因为代码换行被解析。
+			当把两行定义<span>标签的代码写到一行时，空隙就会消失。
+		
+		
+		span,a,img,td,font,strong,em,i,b,sub,sup,ins,del....
+	-->
+		<span id="span1">王二狗和李小花，啊      啊啊啊啊啊</span><span id="span2">窝窝头</span>
+	</body>
+</html>

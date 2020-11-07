@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>块级元素</title>
+		<style type="text/css">
+			#box1{
+				background-color: pink;
+			}
+			#box2{
+				width: 300px;
+				height: 200px;
+				background-color: paleturquoise;
+			}
+			#box3{
+				background-color: palevioletred;
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+			块级元素的特点：
+				1. 独占一行
+					块标签的特点是独占一行，当设置两个<div>标签时，可以发现默认为上下排列。
+				2. 支持所有样式
+					块标签支持所有样式，任何样式添加到块标签上都会起作用，包括盒子模型中的所有属性。
+				3. 不设置宽时，其宽等于父标签宽
+					当块标签不设置宽是，其宽等于父标签的宽。
+				4. 不设置高度时，高度时内容的高度
+					要看内容能撑多高
+					
+				div，h1，h2，h3，h4，h5，h6，p，tr，ul，ol，dl，li，dd，dt。。。
+				
+		-->
+		<div id="box1">
+			王二狗
+		</div>
+		<div id="box2">
+			<div id="box3">
+				李小花李小花李小花李小花李小花李小花李小花李小花李小花李小花李小花李小花李小花李小花李小花李小花李小花李小花李小花李小花李小花李小花李小花李小花李小花李小花李小花李小花李小花
+			</div>
+		</div>
+		<!--无序列表-->
+		<ul>
+			<li>王二狗</li>
+			<li>王二狗</li>
+			<li>王二狗</li>
+		</ul>
+		<!--有序列表-->
+		<ol>
+			<li>王二狗</li>
+			<li>王二狗</li>
+			<li>王二狗</li>
+		</ol>
+		<!--自定义列表  define list-->
+		<dl>
+			<dt>HTML</dt>
+			<dd>超文本标记语言</dd>
+		</dl>
+	</body>
+</html>
